@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName
 class Source : Serializable {
     @SerializedName("id")
     @Expose
-    val id: Any? = null
+    val id: String? = null
     @SerializedName("name")
     @Expose
     val name: String? = null
