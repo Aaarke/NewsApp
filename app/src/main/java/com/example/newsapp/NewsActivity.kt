@@ -2,16 +2,16 @@ package com.example.newsapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.newsapp.ui.main.MainFragment
+import com.example.newsapp.ui.main.NewsFragment
 
-class MainActivity : AppCompatActivity() {
+class NewsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, MainFragment.newInstance())
+                .replace(R.id.container, NewsFragment.newInstance())
                 .commitNow()
         }
     }
