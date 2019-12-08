@@ -28,7 +28,7 @@ class RestClient {
     }
 
     companion object {
-        const val BASE_URL = "https://newsapi.org/v2"
+        const val BASE_URL = "https://newsapi.org"
         private var instance: RestClient? = null
         fun getInstance(): RestClient {
             if (instance == null) {

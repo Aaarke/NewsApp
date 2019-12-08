@@ -6,6 +6,6 @@ import retrofit2.http.GET
 import retrofit2.http.QueryMap
 
 interface ApiService {
-    @GET("services/rest/")
+    @GET("/v2/top-headlines")
     fun getAllNewsHeadline(@QueryMap map: HashMap<String, String>?): Single<NewsData>
 }
