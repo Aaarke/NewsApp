@@ -1,7 +1,10 @@
 package com.example.newsapp.di
 
+import android.app.Application
+import com.example.newsapp.NewsActivity
 import com.example.newsapp.api.ApiService
 import com.example.newsapp.api.RestClient
+import com.example.newsapp.utility.Utils
 import dagger.Module
 import dagger.Provides
 import okhttp3.Dispatcher
@@ -11,6 +14,7 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
+import javax.inject.Inject
 
 @Module
 class ApiModule {

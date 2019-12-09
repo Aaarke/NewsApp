@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">NewsApp</string>
+    <string name="my_news">My News</string>
+    <string name="nov_20_12_56">Nov 20,12.56</string>
+    <string name="cnn_bbc">CNN,BBC</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

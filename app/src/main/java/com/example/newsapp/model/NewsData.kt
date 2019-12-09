@@ -14,5 +14,5 @@ class NewsData : Serializable {
     val totalResults: Int? = null
     @SerializedName("articles")
     @Expose
-    val articles: List<Article>? = null
+    val articles: ArrayList<Article>? = null
 }

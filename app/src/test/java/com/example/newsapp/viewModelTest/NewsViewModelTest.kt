@@ -48,6 +48,16 @@ class NewsViewModelTest {
     }
 
 
+    /*
+  * **************Test case of null****************************************************************
+  * */
+    @Test
+    fun testNull() {
+        `when`(restClient?.getAllNewsHeadline()).thenReturn(null)
+        Assert.assertNull(newsViewModel.allNewsHeadline.value)
+    }
+
+
     @Test
     fun allNewsHeadlineFailureTest() {
         val newsData = NewsData()

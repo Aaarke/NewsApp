@@ -16,12 +16,12 @@ class RestClient {
 
     private fun initDagger() {
         DaggerApiComponent.create().inject(this)
-
     }
 
 
     fun getAllNewsHeadline(): Single<NewsData> {
         val map = HashMap<String, String>()
+        map[Keys.ApiField.REQ_COUNTRY]="us"
         map[Keys.ApiField.REQ_API_KEY] = Keys.Constant.API_KEY
         return getApiService!!.getAllNewsHeadline(map)
 
